@@ -19,13 +19,34 @@
     <!--Start quiz-->
     <main>
         <section>
-        <div class="card codequiz">
+        <div class="card">
           <h1>Click start to begin the quiz!</h1>
           <button class="startButton">Start</button>
           <button class="highScore">High Scores</button> 
         </section>
     </main>
 
+    <!--Time remaining while taking the quiz-->
+    <div id="codequiz">
+        <div id="timecount">Time Remaining</div>
+        <button id="a" onclick="checkAnswer('a')">a</button>
+        <button id="b" onclick="checkAnswer('b')">b</button>
+        <button id="c" onclick="checkAnswer('c')">c</button>
+        <button id="d" onclick="checkAnswer('d')">d</button>
+        <div id="results">Results</div>
+    </div>
+
+    <!--High Scores-->
+    <div id="highScores scorePage">
+        <h2>Players Initials</h2>
+        <h2>Scores</h2>
+    </div>
+
+    <!--Finished Quiz Options-->
+    <div id="finishQuiz">
+        <button id="tryAgain" onclick="restartQuiz()">Try Again</button>
+        <button id="resetScores" onclick="resetScores()">Reset Scores</button>
+    </div>
 
     <!--Javascript link-->
     <script src="./assets/script.js"></script>
