@@ -1,7 +1,5 @@
 var startButton = document.getElementById("startButton");
 var highScore = document.getElementById("highScore");
-var codequiz = document.getElementById("codequiz");
-var timecount = document.getElementById("timecount");
 var buttona = document.getElementById("a");
 var buttonb= document.getElementById("b");
 var buttonc = document.getElementById("c");
@@ -12,10 +10,14 @@ var scorePage = document.getElementById("scorePage");
 var finishQuiz = document.getElementById("finishQuiz");
 var tryAgain = document.getElementById("tryAgain");
 var resetScore = document.getElementById("resetScore");
-var timeRemaining = 90;
-var timeInterval ;
+var timeInterval;
 var score = 0;
 var correct;
+var timeEl;
+var secondsRemain = 90;
+var timeCount = document.getElementById("timecount");
+var currentQuestionIndex = 0;
+
 
 //Questions for the quiz
 var testQuestions = [{
@@ -62,10 +64,26 @@ var testQuestions = [{
     correctOption: "c"},
 ];
 
-//Quiz Timmer
 //Start of quiz 
+function startQuestions(){
+    main.style.display = "none";
+    if (currentQuestionIndex === finalQuestionIndex){
+        return results();
+} 
+
+
+//Timer for the quiz
+timeInterval = setInterval(function() {
+    secondsRemain--;
+    timeCount.textContent = "Time remaining: " + secondsRemain;
+    if(secondsRemain === 0) {
+      clearInterval(timeInterval);
+      results();
+    }
+  }, 1000);
+codequiz.style.display = "block";
 //Check Answers
 //Results of quiz
-//High Scores
 //Reset High Scores
 //Try Again
+}
