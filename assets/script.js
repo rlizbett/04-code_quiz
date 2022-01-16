@@ -1,3 +1,4 @@
+//Variables
 var startButton = document.getElementById("startButton");
 var highScore = document.getElementById("highScore");
 var buttona = document.getElementById("a");
@@ -17,7 +18,6 @@ var timeEl;
 var secondsRemain = 90;
 var timeCount = document.getElementById("timecount");
 var currentQuestionIndex = 0;
-
 
 //Questions for the quiz
 var testQuestions = [{
@@ -63,15 +63,7 @@ var testQuestions = [{
     optionD: "Baseball",
     correctOption: "c"},
 ];
-
-//Start of quiz 
-function startQuestions(){
-    main.style.display = "none";
-    if (currentQuestionIndex === finalQuestionIndex){
-        return results();
-} 
-
-
+//Start of quiz function
 //Timer for the quiz
 timeInterval = setInterval(function() {
     secondsRemain--;
@@ -82,8 +74,7 @@ timeInterval = setInterval(function() {
     }
   }, 1000);
 codequiz.style.display = "block";
-//Check Answers
-//Results of quiz
-//Reset High Scores
-//Try Again
-}
+//Check Answers function
+//Results of quiz function
+//Reset High Scores function
+//Try Againfunction
