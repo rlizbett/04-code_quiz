@@ -1,0 +1,14 @@
+var startButton = document.getElementById("startButton");
+var highScore = document.getElementById("highScore");
+var codequiz = document.getElementById("codequiz");
+var timecount = document.getElementById("timecount");
+var buttona = document.getElementById("a");
+var buttonb= document.getElementById("b");
+var buttonc = document.getElementById("c");
+var buttond = document.getElementById("d");
+var results = document.getElementById("results");
+var highScores = document.getElementById("highScores");
+var scorePage = document.getElementById("scorePage");
+var finishQuiz = document.getElementById("finishQuiz");
+var tryAgain = document.getElementById("tryAgain");
+var resetScore = document.getElementById("resetScore");
