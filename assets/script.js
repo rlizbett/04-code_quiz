@@ -157,6 +157,18 @@ function reset() {
     optionD.innerHTML = optionDList[iterationNum];
 }
 
+timeInterval = setInterval(function() {
+    secondsRemain--;
+    countDown.textContent = "Time remaining: " + secondsRemain;
+    if (secondsRemain === 0) {
+      clearInterval(timeInterval);
+      results();
+    }
+  }, 1000);
+countDown.style.display = "block";
+ 
+
+
 
 
 
