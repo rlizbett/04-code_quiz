@@ -29,10 +29,10 @@ let sixQuestions = [
     "6. Which sport does not have a location to train?"
 ]
  
-let optionAList = ["The chapel", '3', "Mens Soccer", "Austin", "Bobcats", "Softball",]
-let optionBList = ["Moody Hall", '2', "Mens and Womens Tennis", "San Antonio", "Hilltopers", "Tennis",]
-let optionCList = ["Main Building", '1', "Mens and Womens Golf", "San Marcos", "Bulldogs", "Track",]
-let optionDList = ["Doyel", '0', "All of the above", "Corpus Christi", "Cougars", "Basketball",]
+let optionAList = ["A). The chapel", 'A). 3', "A). Mens Soccer", "A). Austin", "A). Bobcats", "A). Softball",]
+let optionBList = ["B). Moody Hall", 'B). 2', "B). Mens and Womens Tennis", "B). San Antonio", "B). Hilltopers", "B). Tennis",]
+let optionCList = ["C). Main Building", 'C). 1', "C). Mens and Womens Golf", "C). San Marcos", "C). Bulldogs", "C). Track",]
+let optionDList = ["D). Doyel", 'D). 0', "D). All of the above", "D). Corpus Christi", "D). Cougars", "D). Basketball",]
 
 quiz.style.display = "none";
 question1Btn.style.display = "none";
@@ -166,7 +166,9 @@ timeInterval = setInterval(function() {
     }
   }, 1000);
 countDown.style.display = "block";
+
  
+
 
 
 
