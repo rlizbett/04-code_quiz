@@ -9,3 +9,6 @@ The purpose of this assignment was to create a timed code quiz utilizing html, c
 
 
 
+
+![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/93292915/150660468-f3f0edba-b5ff-4bb9-8e6c-9ec0b208919e.gif)
+
